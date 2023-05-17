@@ -1,9 +1,14 @@
-<script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+<template>
+<div>
+这是test分支的home文件
+</div>
+</template>
+
+<script setup lang='ts'>
+import { ref, reactive } from 'vue'
+
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style scoped>
+
+</style>
