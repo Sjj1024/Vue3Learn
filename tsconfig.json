@@ -8,5 +8,9 @@
       "path": "./tsconfig.app.json"
     }
   ],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "types": ["element-plus/global"]
+  },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
