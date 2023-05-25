@@ -1,0 +1,1 @@
+"use strict";const n=require("electron"),t=require("path");let e;const o=()=>{e=new n.BrowserWindow({webPreferences:{devTools:!0,contextIsolation:!1,nodeIntegration:!0}}),n.app.isPackaged?e.loadFile(t.join(__dirname,"../index.html")):e.loadURL(`http://${process.env.VITE_DEV_SERVER_HOST}:${process.env.VITE_DEV_SERVER_PORT}`)};n.app.whenReady().then(o);
