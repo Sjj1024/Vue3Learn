@@ -9,8 +9,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { ref, reactive, nextTick } from 'vue'
+// 打印一下环境变量
+console.log("import.meta.env-----", import.meta.env);
 
+nextTick(()=>{
+  console.log("nextTick没有执行.........");
+  
+})
 // 动态样式
 const style = ref('red')
 
