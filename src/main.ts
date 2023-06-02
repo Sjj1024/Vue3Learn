@@ -1,21 +1,21 @@
 import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import App from './App.vue'
-import router from './router'
 import loading from './plugin/loading'
-import "./assets/tailwind.css"
-
+// import "./assets/tailwind.css"
+import router from './route'
 
 const app = createApp(App)
 
 app.use(createPinia())
-app.use(router)
+
 // 自定义插件全局loading
 app.use(loading)
+// 注册路由信息
+app.use(router)
 
 app.use(ElementPlus)
 // 定义全局变量和全局函数
